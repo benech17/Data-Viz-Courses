@@ -1,0 +1,24 @@
+$(document).ready(function () {
+    $('#run_cell_btn').click(function () {
+        $("#run_cell").trigger("click");
+    });
+    $('#run_all_cells_btn').click(function () {
+        $("#run_all_cells").trigger("click");
+    });
+    $("#clear_current_output_btn").click(function () {
+        $("#clear_current_output").trigger("click");
+    });
+    $("#restart_kernel_btn").click(function () {
+      $("#restart_kernel").trigger("click");
+    });
+    $("#int_kernel_btn").click(function () {
+      $("#int_kernel").trigger("click");
+    });
+});
+
+function init_tooltip() {
+    console.log("tooltip start");
+    $('[data-toggle="tooltip"]').tooltip();
+}
+
+init_tooltip();
